@@ -5,8 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/layout";
 import UserHeader from "@/components/userheader";
+import { useState } from "react";
 
 export default function Home() {
+  const [message, setMessage] = useState("");
+  const [message1, setMessage1] = useState("");
+  const [show, setShow] = useState(false);
   return (
     <Layout>
       <div className="flex flex-1 flex-col space-y-5 p-0 overflow-y-auto">
@@ -239,14 +243,16 @@ export default function Home() {
                         </span>
                       </div>
                     </div>
-                    <div className="flex justify-end mb-2">
-                      <div className="rounded-md rounded-br-none py-2 px-3 bg-red-500 text-white">
-                        <p className="text-sm mt-1">See you soon take care.</p>
-                        <span className="text-right text-xs  mt-1">
-                          12:47 pm
-                        </span>
+                    {show && (
+                      <div className="flex justify-end mb-2">
+                        <div className="rounded-md rounded-br-none py-2 px-3 bg-red-500 text-white">
+                          <p className="text-sm mt-1">{message1}</p>
+                          <span className="text-right text-xs  mt-1">
+                            12:47 pm
+                          </span>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 </div>
 
@@ -256,9 +262,17 @@ export default function Home() {
                     <input
                       className="w-full border bg-gray-50 rounded px-2 py-2"
                       type="text"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      placeholder="Enter your message"
                     />
                   </div>
-                  <button className="p-2 bg-gray-100 rounded-full">
+                  <button
+                    className="p-2 bg-gray-100 rounded-full"
+                    onClick={() => {
+                      setShow(true), setMessage1(message), setMessage("");
+                    }}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="icon icon-tabler icon-tabler-send"
