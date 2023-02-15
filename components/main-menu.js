@@ -30,7 +30,7 @@ const reportMenus = [
   {
     icon: PaymentMenuIcon,
     title: "Payment Details",
-    href: "/payment-details",
+    href: "/paymentDetails",
   },
   {
     icon: TransactionMenuIcon,
