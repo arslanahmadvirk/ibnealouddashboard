@@ -133,7 +133,7 @@ const Invoices = () => {
                 <td className="py-4 px-6">3MW5U7J07N8C61539</td>
                 <td className="py-4 px-6">
                   <img
-                    src="http://ibnalaoud.com/Contents/Images/Car/2023-01/20230121_085056_3MW5U7J07N8C61539.jpg"
+                    src="./car.jpg"
                     alt=""
                     className="w-[90px] h-[70px] object-cover"
                   />
@@ -158,7 +158,7 @@ const Invoices = () => {
                 <td className="py-4 px-6">3MW5U7J07N8C61539</td>
                 <td className="py-4 px-6">
                   <img
-                    src="http://ibnalaoud.com/Contents/Images/Car/2023-01/20230121_085056_3MW5U7J07N8C61539.jpg"
+                    src="./car.jpg"
                     alt=""
                     className="w-[90px] h-[70px] object-cover"
                   />
@@ -183,7 +183,7 @@ const Invoices = () => {
                 <td className="py-4 px-6">3MW5U7J07N8C61539</td>
                 <td className="py-4 px-6">
                   <img
-                    src="http://ibnalaoud.com/Contents/Images/Car/2023-01/20230121_085056_3MW5U7J07N8C61539.jpg"
+                    src="./car.jpg"
                     alt=""
                     className="w-[90px] h-[70px] object-cover"
                   />
@@ -406,11 +406,7 @@ const Invoices = () => {
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                     <a href="#">
-                      <img
-                        class="rounded-t-lg"
-                        src="http://ibnalaoud.com/Contents/Images/Car/2023-01/20230121_085056_3MW5U7J07N8C61539.jpg"
-                        alt=""
-                      />
+                      <img class="rounded-t-lg" src="./car.jpg" alt="" />
                     </a>
                     <div class="p-5">
                       <a href="#">
