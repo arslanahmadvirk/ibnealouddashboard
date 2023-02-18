@@ -46,7 +46,7 @@ const reportMenus = [
 
 function MainMenu() {
   return (
-    <div className="flex w-[270px] flex-none flex-col justify-between bg-[#00033a] p-6 text-white">
+    <div className="flex w-[270px] flex-none flex-col justify-between bg-[#00033a] p-6 text-white overflow-y-auto">
       <div>
         <div className="flex flex-col space-y-5">
           {/* Logo */}
